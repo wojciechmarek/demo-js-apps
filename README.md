@@ -6,9 +6,9 @@ This repository contains a collection of JavaScript apps I created to learn the 
 
 A live demo is available at [https://demo-js-apps.netlify.app](https://demo-js-apps.netlify.app).
 
-## Use technologies
+## Used technologies
 
 Standard frontend development stack:
 - HTML 🏗️,
-- CSS 🦄
+- CSS 🦄,
 - JavaScript 💛.
