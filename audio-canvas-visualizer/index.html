@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" async defer></script>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .canvas {
+        border: 1px solid black;
+        height: 320px;
+        width: 480px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button" src="./song.mp3" controls>Play a song</button>
+      <canvas class="canvas"></canvas>
+    </div>
+  </body>
+</html>
