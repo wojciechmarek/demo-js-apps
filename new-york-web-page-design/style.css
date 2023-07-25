@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+body main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("bg/background1.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+body main h1 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Bowlby One SC', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 10em;
+  letter-spacing: 10px;
+  background: url("bg/background2.jpg") no-repeat center fixed;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body main .parallax-manhattan {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("bg/background-man.png") no-repeat center fixed;
+  background-size: cover;
+  z-index: 100;
+}
+/*# sourceMappingURL=style.css.map */

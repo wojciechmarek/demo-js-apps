@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="200" height="59" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <path id="Path_1" data-name="Path 1" d="M1620.643-98.723s93.817,410.51-426.446,562.041S725.105,981.277,725.105,981.277H-68.085v-1080Z" transform="translate(68.085 98.723)" fill="#363b40"/>
+    <text id="Make_with_our_increadible_thinks" data-name="Make with our increadible thinks" transform="translate(218 284)" fill="#e6cece" font-size="91" font-family="MullerNarrow-ExtraBold, Muller" font-weight="800"><tspan x="0" y="0">Make with our </tspan><tspan x="0" y="109">increadible </tspan><tspan x="0" y="218">thinks</tspan></text>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(218 653)" fill="none" stroke="#a1a1a1" stroke-width="1">
+      <rect width="200" height="59" rx="13" stroke="none"/>
+      <rect x="0.5" y="0.5" width="199" height="58" rx="12.5" fill="none"/>
+    </g>
+    <text id="CHECK_IT_OUT" data-name="CHECK IT OUT" transform="translate(261 691)" fill="#e6cece" font-size="21" font-family="MullerNarrow-ExtraBold, Muller" font-weight="800"><tspan x="0" y="0">CHECK IT OUT</tspan></text>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(478 653)" clip-path="url(#clip-path)">
+      <g transform="translate(-478 -653)">
+        <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(478 653)" fill="none" stroke="#a1a1a1" stroke-width="1">
+          <rect width="200" height="59" rx="13" stroke="none"/>
+          <rect x="0.5" y="0.5" width="199" height="58" rx="12.5" fill="none"/>
+        </g>
+        <text id="VISIT_OUT_BLOG" data-name="VISIT OUT BLOG" transform="translate(511 691)" fill="#e6cece" font-size="21" font-family="MullerNarrow-ExtraBold, Muller" font-weight="800"><tspan x="0" y="0">VISIT OUT BLOG</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

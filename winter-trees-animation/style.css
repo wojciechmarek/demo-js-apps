@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body section .box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #1c547d;
+  -webkit-animation: colorAnimate 5s linear infinite;
+          animation: colorAnimate 5s linear infinite;
+}
+
+body section .box .tree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -131px;
+}
+
+body section .box .tree.tree1 {
+  background: url("imgs/tree1.png");
+  background-repeat: repeat-x;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
+  z-index: 3;
+}
+
+body section .box .tree.tree2 {
+  background: url("imgs/tree2.png");
+  background-repeat: repeat-x;
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+  z-index: 2;
+}
+
+body section .box .tree.tree3 {
+  background: url("imgs/tree3.png");
+  background-repeat: repeat-x;
+  -webkit-animation: animate 45s linear infinite;
+          animation: animate 45s linear infinite;
+  z-index: 1;
+}
+
+body section .box .snow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("imgs/snow.png");
+  z-index: 4;
+  -webkit-animation: snow 15s linear infinite;
+          animation: snow 15s linear infinite;
+}
+
+body section h1 {
+  margin: 20px 0 0;
+  padding: 0;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 8em;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1406px 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1406px 0;
+  }
+}
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 768px;
+  }
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 768px;
+  }
+}
+
+@-webkit-keyframes colorAnimate {
+  0% {
+    background-color: red;
+  }
+  16% {
+    background-color: orange;
+  }
+  32% {
+    background-color: yellow;
+  }
+  48% {
+    background-color: green;
+  }
+  64% {
+    background-color: blue;
+  }
+  82% {
+    background-color: purple;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes colorAnimate {
+  0% {
+    background-color: red;
+  }
+  16% {
+    background-color: orange;
+  }
+  32% {
+    background-color: yellow;
+  }
+  48% {
+    background-color: green;
+  }
+  64% {
+    background-color: blue;
+  }
+  82% {
+    background-color: purple;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

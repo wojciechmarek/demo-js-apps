@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap');
+/*    font-family: 'Just Another Hand', cursive;    */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Just Another Hand', cursive;
+
+    section {
+        position: absolute;  //--zawsze trzyma odleglosci podane ogleglosci od konenera, tutaj przez: top i left
+        top: 0;
+        left: 0;
+        width: 100vw; //--100% rozciagnie element na całą mozliwą przestrzen, 100vw też na całą mozliwą przestrzeń(ale strona ma jeszcze marginesy i one spowodują scroola horizantalnego, bo tylko zawartość będzie w viewport), 100% == 100vw gdy body ma margin:0
+        height: 100vh; 
+        background: url("bg.jpg") no-repeat center fixed; //--tło z zdjeciem, nie powtarza, umieszcza na srodku pioniowo&poziomo, nie ruchome przy przewijaniu
+        background-size: cover; //--rozciaga obraz do kortener propercjonalie i przycina krawędź
+
+        /*zalecany sposob*/
+        display: flex;  //--flex ułatwia tworzenie responsywnych struktur, wymaga zdef kontenera w ktorym bedą elementy(tataj section to kontener, a napis <h1> to element))
+        justify-content: center; //-- dzieła z flex, ustawia elem w kontenerze na srodku(tylko poziomo)
+        align-items: center; // --dziala z flex, tylko do ustawiania w pionie
+
+        h1 {
+            margin: 0; //--wyłacza marginesy na przyszłosc
+            padding: 0;
+            text-align: center; //--wyrownuje tekst w kontenerze, ale kontener i tak jest na spodku wiec nie potrzebny
+            font-size: 20em;
+            letter-spacing: 10px;
+            background: url("bgText.jpg") no-repeat center fixed; //tło liter, nie powtarza, umieszcza na srodku poin&poziom, nie ruchome przy przewijaniu
+            background-size: cover; //-- up
+            background-clip: text; //mowi czy obraz rozciaga się w kontenerze też pod border(border-box), tylko pod padding(padding-box), tylko pod contentem(content-box) lub tylko wypełnia napis(text)
+            -webkit-background-clip: text; //--to musi być gdy wybierzemy text;
+            -webkit-text-fill-color: transparent;
+
+        }
+    }
+}

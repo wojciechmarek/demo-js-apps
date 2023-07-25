@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042331;
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+
+    rect {
+        width: 100px;
+        height: 100px;
+        fill: none; //--- rect jest czarny domyślnie, gdyby tego nie było to wydzielibysmy czarne tło w animacji
+        stroke-width: 100px;
+        stroke: #00aadf; //-- nadanie koloru zamiast czarnego
+        stroke-dasharray: 100;
+        stroke-dashoffset: 50%; //-- powoduje że połowa jest pusta
+        animation: animate 2s linear infinite;
+    }
+}
+
+@keyframes animate
+{
+    to {
+        stroke-dashoffset: 250%;
+    }
+}

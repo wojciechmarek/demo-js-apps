@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; //--- ułatwia tworzenie elastycznych struktur
+    justify-content: center; //--- ten flex ustawia tylko <ul> na środku
+    align-items: center;
+    min-height: 100vh;  //--- min wysokość strony to wysokosc viewport
+    background: #1b141a;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex; // ten flex ustawia elementy listy poziomo obok siebie, domyślni elementy w flex są w "row"
+
+    li {
+        position: relative; //---pozycjonowanie wwzgledem normalnej pozycji(tej z static)
+        list-style: none; 
+        width: 100px;  //tutaj kazdy <li> staje się okrągłym kołem
+        height: 100px;
+        margin: 0 10px; //-- margines na zernątrz po lewej i prawej
+        border-radius: 50%;
+        box-sizing: border-box; //--- padding i border jest zawarty w szerokości i wysokości elementu
+        
+        a {
+            position: absolute; //link(tutaj czarne koło) pozycjon wzgledem podanych odległości od kontenera który jjest niewidzialny(jest nim <li>)
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            text-align: center; //--- wyrownuje ikone wewnatrz na srodku
+            line-height: 80px; //--- wysokość linii
+            color: #fff;
+            background: black;
+            font-size: 36px;
+            border-radius: 50%; //--- zaokrągla rogi i tutaj tworzy okrąg z linku
+
+ 
+            .fa {  //-- edytuje kazdą ikonę, bo każda automatycznie ma jakąś klasę .fa
+                text-shadow: 0 2px 5px rgba(0,0,0,0.2); //lekki cień
+                transition: 0.5s; //--- gdyby miała jakiś efekt to ustawia czas, efekt nałożymy w :hover
+                transform: scale(0.8); //--pomniejsza
+                opacity: 0.2;
+            } 
+        }
+
+        a:hover .fa { //-- stylizuje tylko elem z .fa po najechamu myszką na <a>
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+
+    li::before, li::after { //-- te elementy zostaną dodane przed ustawieniem deklaracji w <li> powyżej, ale też po ustawiemiu tych powyżej
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        border-radius: 50%;
+        filter: blur(20px);
+        opacity: 0;
+        transition: 1s;
+        z-index: -1;
+    }
+
+    li::after {
+        filter: blur(40px);
+    }
+
+    li:hover::before, li:hover::after {
+        opacity: 1;
+    }
+
+    li:nth-child(1) a, li:nth-child(1)::before, li:nth-child(1)::after {
+        background: linear-gradient(45deg, #ff0057, #e64a19);
+    }
+
+    li:nth-child(2) a, li:nth-child(2)::before, li:nth-child(2)::after {
+        background: linear-gradient(45deg, #89ff00, #00bcd4);
+    }
+
+    li:nth-child(3) a, li:nth-child(3)::before, li:nth-child(3)::after {
+        background: linear-gradient(45deg, #e91e63, #5d02ff);
+    }
+
+    li:nth-child(4) a, li:nth-child(4)::before, li:nth-child(4)::after {
+        background: linear-gradient(45deg, #ff0000, #ffc107);
+    }
+}
+

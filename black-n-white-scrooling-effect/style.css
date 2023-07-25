@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  padding: 100px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+section h2 {
+  font-size: 4em;
+}
+
+section p {
+  font-size: 1.2em;
+}
+
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: #fff;
+  mix-blend-mode: difference;
+}
+/*# sourceMappingURL=style.css.map */

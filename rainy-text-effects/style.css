@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap");
+/*    font-family: 'Just Another Hand', cursive;    */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Just Another Hand', cursive;
+}
+
+body section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  /*zalecany sposob*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20em;
+  letter-spacing: 10px;
+  background: url("bgText.jpg") no-repeat center fixed;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */
