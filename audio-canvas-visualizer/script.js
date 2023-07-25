@@ -1,8 +1,8 @@
 const playButton = document.querySelector(".button");
 
-const audio = new Audio("./song.mp3");
-
 playButton.addEventListener("click", () => {
+  const audio = new Audio("https://github.com/wojciechmarek/musicfy/raw/main/demo-songs/a_small_miracle.mp3");
+  audio.crossOrigin = "anonymous";
   audio.play();
 
   const context = new AudioContext();
@@ -20,7 +20,6 @@ playButton.addEventListener("click", () => {
   analyser.fftSize = 1024;
 
   const bufferLength = analyser.frequencyBinCount;
-  console.log(bufferLength);
 
   const dataArray = new Uint8Array(bufferLength);
 
@@ -32,7 +31,6 @@ playButton.addEventListener("click", () => {
     x = 0;
 
     analyser.getByteFrequencyData(dataArray);
-    console.log(dataArray);
 
     for (let i = 0; i < bufferLength; i++) {
       barHeight = dataArray[i];
