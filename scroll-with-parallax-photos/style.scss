@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #f9f9f9;
+        font-size: 24px;
+        padding: 25px;
+
+
+        .parallax1 {
+            background: transparent;
+            padding: 200px 35px;  //--top&bottom left&right
+            color: white;
+        }
+        
+        .info1 {
+            z-index: 2;
+            position: relative;
+        }
+
+        .parallax {  //--- domyslnie wszystkie obiekty z klasą z biblioteki są na indeksie -100, dlatego w html ustawiamy na 1
+            min-height: 500px;
+            background: transparent;
+        }
+        
+        
+    }
+}
