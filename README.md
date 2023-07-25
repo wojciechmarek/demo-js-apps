@@ -8,4 +8,7 @@ A live demo is available at [https://demo-js-apps.netlify.app](https://demo-js-a
 
 ## Use technologies
 
-Standard frontend dev stack: HTML 🏗️, CSS 🦄 and JavaScript 💛.
+Standard frontend development stack:
+- HTML 🏗️,
+- CSS 🦄
+- JavaScript 💛.
