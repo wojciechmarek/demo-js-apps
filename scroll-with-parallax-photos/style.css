@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 25px;
+}
+
+body .container .parallax1 {
+  background: transparent;
+  padding: 200px 35px;
+  color: white;
+}
+
+body .container .info1 {
+  z-index: 2;
+  position: relative;
+}
+
+body .container .parallax {
+  min-height: 500px;
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */

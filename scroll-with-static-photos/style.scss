@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #f9f9f9;
+        font-size: 24px;
+        padding: 25px;
+
+
+        .parallax1 {
+            background: url("../imgs/photo1.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed; //-- tło jest nieruchome przy przewijaniu
+            height: 500px;
+        }
+
+        .parallax2 {
+            background: url("../imgs/photo2.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed; //-- tło jest nieruchome przy przewijaniu
+            height: 500px;
+        }
+
+        .parallax3 {
+            background: url("../imgs/photo3.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed; //-- tło jest nieruchome przy przewijaniu
+            height: 500px;
+        }
+    }
+}
